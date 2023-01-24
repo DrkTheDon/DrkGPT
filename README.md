@@ -9,4 +9,5 @@ DrkGPT uses the GPT 3.1 API to generate an answer to your question. Teachers now
 ![](https://github.com/DrkTheDon/DrkGPT/blob/main/github/ezgif-2-b9f85f2fc1.gif)
 
 ## Cretis
-All credits given to the OpenAI team for the API usage. The Main developers of this project are **DrkTheDon** (drk#4697) and **DragonSlayer64** (ludvig#2236).
+All credits given to the OpenAI team for the API usage. 
+The Main developers of this project are **DrkTheDon** (drk#4697) and **DragonSlayer64** (ludvig#2236).
