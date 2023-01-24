@@ -7,6 +7,7 @@ DrkGPT uses the GPT 3.1 API to generate an answer to your question. Teachers now
 ![](https://github.com/DrkTheDon/DrkGPT/blob/main/github/Screenshot%20from%202023-01-24%2023-24-48.png)
 #### OUTPUT IN GOOGLE DOCUMENTS
 ![](https://github.com/DrkTheDon/DrkGPT/blob/main/github/ezgif-2-b9f85f2fc1.gif)
+
 *Whoops accidentaly put the dot at the beggining.*
 
 ## Cretis
