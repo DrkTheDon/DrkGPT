@@ -8,7 +8,7 @@ DrkGPT uses the GPT 3.1 API to generate an answer to your question. Teachers now
 #### OUTPUT IN GOOGLE DOCUMENTS
 ![](https://github.com/DrkTheDon/DrkGPT/blob/main/github/ezgif-2-b9f85f2fc1.gif)
 
-*Whoops accidentaly put the dot at the beggining.*
+*Whoops accidentaly put the dot at the beggining. And this was written on the "HIGH SPEED" option.*
 
 ## Cretis
 All credits given to the OpenAI team for the API usage. 
