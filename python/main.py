@@ -1,3 +1,12 @@
+#!/usr/bin/python3
+
+#####################################################
+## DrK ChatGPT Writer (DrkGPT)                     ##
+## We do a little bit of trolling.                 ##
+## https://drkbro.ml/                              ##
+## Coded by: drk, DragonSlayer64                   ##
+#####################################################
+
 import openai
 import os
 import time
