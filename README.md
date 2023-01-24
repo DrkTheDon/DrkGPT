@@ -10,6 +10,22 @@ DrkGPT uses the GPT 3.1 API to generate an answer to your question. Teachers now
 
 *Whoops accidentaly put the dot at the beggining. And this was written on the "HIGH SPEED" option.*
 
+#### API Code Section in Python
+```py
+# API Key and URL Variable
+openai.api_key = "YOUR_API_KEY"
+url = "https://api.openai.com/v1/completions"
+
+# API REQUEST
+headers = {"Authorization": f"Bearer {openai.api_key}"}
+data = {'model': 'text-davinci-003', 'prompt': f'{prompt}', "temperature": 0, "max_tokens": 2048}
+raw_json = requests.post(url, headers=headers, json=data).json()
+
+# Getting generated text from json and stripping it out of the \n lines.
+plain_text = raw_json['choices'][0]['text']
+plain_text_stripped = plain_text.strip() # Finished Completion
+```
+
 ## Cretis
 All credits given to the OpenAI team for the API usage. 
 The Main developers of this project are **DrkTheDon** (drk#4697) and **DragonSlayer64** (ludvig#2236).
