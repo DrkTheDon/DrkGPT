@@ -4,4 +4,5 @@ DrkGPT uses the GPT 3.1 API to generate an answer to your question. Teachers now
 ## Showcase
 
 ![](https://github.com/DrkTheDon/DrkGPT/blob/main/github/Screenshot%20from%202023-01-24%2023-24-48.png)
+### OUTPUT
 ![](https://github.com/DrkTheDon/DrkGPT/blob/main/github/ezgif-2-b9f85f2fc1.gif)
