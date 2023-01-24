@@ -26,6 +26,6 @@ plain_text = raw_json['choices'][0]['text']
 plain_text_stripped = plain_text.strip() # Finished Completion
 ```
 
-## Cretis
+## Credits
 All credits given to the OpenAI team for the API usage. 
 The Main developers of this project are **DrkTheDon** (drk#4697) and **DragonSlayer64** (ludvig#2236).
