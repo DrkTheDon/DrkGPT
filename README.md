@@ -2,20 +2,13 @@
 DrkGPT uses the GPT 3.1 API to generate an answer to your question. Teachers nowadays use draftback to see if you copy or pasted. My program writes the essay for you at a designated speed, pausing now and then making your writing more trustworthy.
 ## Installation
 #### Python insallation
-```git clone https://github.com/DrkTheDon/DrkGPT.git```
+```
+git clone https://github.com/DrkTheDon/DrkGPT.git
+cd /DrkGPT/python
+pip3 install -r requirements.txt
+python3 main.py
+```
 
-*This will install DrkGPT locally.*
-
-```cd /DrkGPT/python```
-*CD in the /DrkGPT/python Direcotry*
-
-```pip3 install -r requirements.txt```
-
-*Installing all the Missing and essential libraries.*
-
-```python3 main.py```
-
-*Launch DrkGPT*
 
 ## Showcase
 #### QUESTION
