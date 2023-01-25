@@ -69,7 +69,7 @@ const openai = new OpenAIApi(configuration);
     })()
 ```
 
-## For Developers
+## Future Plans
 #### Browser Extension
 We Plan to make this into a browser extension.
 
