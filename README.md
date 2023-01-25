@@ -10,6 +10,15 @@ cd /DrkGPT/python
 pip3 install -r requirements.txt
 python3 main.py
 ```
+### Javascript/Node Installation
+```
+```
+git clone https://github.com/DrkTheDon/DrkGPT.git
+cd /DrkGPT/js
+npm install openai
+cd src/
+node index.js
+```
 ### API USAGE
 In order to use **DrkGPT** you need an **API access key**. Enter here amd create a secret key: 
 
