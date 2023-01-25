@@ -1,29 +1,11 @@
-/////////////////////////////////////////////////////
-// DrK ChatGPT Writer (DrkGPT)                     //
-// We do a little bit of trolling.                 //
-// https://drkbro.ml/                              //
-// Coded by: drk, DragonSlayer64                   //
-/////////////////////////////////////////////////////
-
-
-const prompt = "DrkGPT\n>";
 const { Configuration, OpenAIApi } = require("openai");
-
-
-var API_KEY = "API_KEY"; // API KEY
 const configuration = new Configuration({
-  apiKey: API_KEY, 
+  apiKey: process.env.OPENAI_API_KEY,
 });
-
 const openai = new OpenAIApi(configuration);
-async () => {
-  try {
-    const response = await openai.Completion.create({
-      engine: "text-davinci-003",
-      prompt: prompt,
-    });
-    console.log(response.choices[0].text);
-  } catch (error) {
-    console.log(error);
-  }
-};
+const response = await openai.createCompletion({
+  model: "text-davinci-003",
+  prompt: "Hello world",
+  temperature: 0,
+  max_tokens: 7,
+});
