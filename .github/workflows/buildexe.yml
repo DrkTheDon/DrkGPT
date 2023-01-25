@@ -50,7 +50,7 @@ jobs:
           script-name: python/drkgpt.py
           onefile: true
           enable-plugins: pyside6
-          disable-console: true
+          disable-console: false
           
       # Uploads artifact
       - name: Upload Artifacts
