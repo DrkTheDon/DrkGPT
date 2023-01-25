@@ -1,3 +1,4 @@
+const prompt = "DrkGPT\n>";
 const { Configuration, OpenAIApi } = require("openai");
 
 
