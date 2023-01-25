@@ -58,6 +58,6 @@ jobs:
         with:
           name: ${{ runner.os }} Build
           path: |
-            build/*.exe
-            build/*.bin/**/*
+            build/drkgpt.exe
+            build/drkgpt.bin
             
