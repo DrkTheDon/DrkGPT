@@ -10,6 +10,7 @@ python3 main.py
 ```
 ### API USAGE
 In order to use **DrkGPT** you need an **API access key**. Enter here amd create a secret key: 
+
 https://beta.openai.com/account/api-keys
 
 ## Preview
