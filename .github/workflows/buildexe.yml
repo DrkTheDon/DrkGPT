@@ -41,7 +41,7 @@ jobs:
 
       # Build python script into a stand-alone exe
       - name: Build DrkGPT into S-A EXE
-      - uses: Nuitka/Nuitka-Action@main
+        uses: Nuitka/Nuitka-Action@main
         with:
           script-name: python/drkgpt.py
           onefile: true
