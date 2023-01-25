@@ -12,8 +12,8 @@ python3 main.py
 In order to use **DrkGPT** you need an **API access key**. Enter here amd create a secret key: 
 https://beta.openai.com/account/api-keys
 
-## Showcase
-#### QUESTION
+## Preview
+#### QUESTION TO DRKGPT
 ![](https://github.com/DrkTheDon/DrkGPT/blob/main/github/Screenshot%20from%202023-01-24%2023-24-48.png)
 #### OUTPUT IN GOOGLE DOCUMENTS
 ![](https://github.com/DrkTheDon/DrkGPT/blob/main/github/ezgif-2-b9f85f2fc1.gif)
