@@ -28,13 +28,10 @@ jobs:
         with:
           python-version: '3.11' # Version range or exact version of a Python version to use, using SemVer's version range syntax
           architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
-          cache: 'pip'
-          cache-dependency-path: |
-            **/python/requirements*.txt
         
-      - name: 268 on TOP
+      - name: 268 on TOP - DrK
         run: |
-          pip install -r /python/requirements.txt 
+          pip install -r python/requirements.txt 
 
       # Build python script into a stand-alone exe
       - name: Build Executable
