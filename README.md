@@ -18,6 +18,8 @@ python3 main.py
 
 *Whoops accidentaly put the dot at the beggining. And this was written on the "HIGH SPEED" option.*
 
+## For Developers
+
 #### API Code Section in Python
 ```py
 # API Key and URL Variable
