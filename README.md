@@ -21,6 +21,10 @@ https://beta.openai.com/account/api-keys
 
 *Written on the "HIGH SPEED" option. Ignore the dot that was my mistake lol.*
 
+## Credits
+All credits given to the OpenAI team for the API usage. 
+The Main developers of this project are **DrkTheDon** (drk#4697) and **DragonSlayer64** (ludvig#2236).
+
 ## For Developers
 
 #### API Code Section in Python
@@ -39,6 +43,3 @@ plain_text = raw_json['choices'][0]['text']
 plain_text_stripped = plain_text.strip() # Finished Completion
 ```
 
-## Credits
-All credits given to the OpenAI team for the API usage. 
-The Main developers of this project are **DrkTheDon** (drk#4697) and **DragonSlayer64** (ludvig#2236).
