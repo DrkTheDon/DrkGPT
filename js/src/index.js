@@ -1,3 +1,10 @@
+/////////////////////////////////////////////////////
+// DrK ChatGPT Writer (DrkGPT)                     //
+// We do a little bit of trolling.                 //
+// https://drkbro.ml/                              //
+// Coded by: drk, DragonSlayer64                   //
+/////////////////////////////////////////////////////
+
 const express = require("express");
 const app = express();
 const { Configuration, OpenAIApi } = require("openai");
