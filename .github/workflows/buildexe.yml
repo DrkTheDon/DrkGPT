@@ -39,7 +39,7 @@ jobs:
       - name: Build DrkGPT into S-A .EXE
         uses: Nuitka/Nuitka-Action@v0.4
         with:
-          script-name: python/main.py
+          script-name: python/drkgpt.py
 
       # Uploads artifact
       - name: Upload Artifact
