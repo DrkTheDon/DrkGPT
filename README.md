@@ -3,12 +3,18 @@ DrkGPT uses the GPT 3.1 API to generate an answer to your question. Teachers now
 ## Installation
 #### Python insallation
 ```git clone https://github.com/DrkTheDon/DrkGPT.git```
+
 *This will install DrkGPT locally.*
+
 ```cd /DrkGPT/python```
 *CD in the /DrkGPT/python Direcotry*
+
 ```pip3 install -r requirements.txt```
+
 *Installing all the Missing and essential libraries.*
+
 ```python3 main.py```
+
 *Launch DrkGPT*
 
 ## Showcase
