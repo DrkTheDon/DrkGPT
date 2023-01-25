@@ -1,11 +1,24 @@
+const express = require("express");
+const app = express();
 const { Configuration, OpenAIApi } = require("openai");
+
 const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: "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",
 });
+
 const openai = new OpenAIApi(configuration);
-const response = await openai.createCompletion({
-  model: "text-davinci-003",
-  prompt: "Hello world",
-  temperature: 0,
-  max_tokens: 7,
+
+const completionFunction = async () => {
+  const completion = await openai.createCompletion({
+    model: "text-davinci-002",
+    prompt: "what is the capital of germany?",
+  });
+
+  console.log(completion.data.choices[0].text);
+};
+
+completionFunction();
+
+app.get("/", function (req, res) {
+  res.send("Hello World");
 });
