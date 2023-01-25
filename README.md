@@ -12,7 +12,6 @@ python3 main.py
 ```
 ### Javascript/Node Installation
 ```
-```
 git clone https://github.com/DrkTheDon/DrkGPT.git
 cd /DrkGPT/js
 npm install openai
