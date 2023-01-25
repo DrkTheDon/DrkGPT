@@ -1,49 +1,60 @@
-# This is a workflow for testing various Nuitka command-line options
 
-name: DRKGPT To S-A .EXE - by DrK
+name: DrkGPT to EXE
 
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: ["main"]
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-
 jobs:
 
   build:
-    # Windows is currently the only platform this action supports
-    runs-on: windows-latest
+
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
+      
+    runs-on: ${{ matrix.os }}
 
     steps:
     
       # Check-out repository
-      - name: Checkout DrkGPT
+      - name: Check out DrkGPt
         uses: actions/checkout@v3
-
+      
       # Setup Python
-      - name: DrkGPT Setup Python
+      - name: Setup Python For DrkGPT
         uses: actions/setup-python@v4
         with:
           python-version: '3.11' # Version range or exact version of a Python version to use, using SemVer's version range syntax
           architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
-        
-      - name: DrkGPT Dependecies
-        run: |
-          pip install -r python/requirements.txt --use-pep517
+          cache: 'pip'
+      - run: |
+          python -m pip install --upgrade pip
+          pip install -r python/requirements.txt
 
       # Build python script into a stand-alone exe
-      - name: Build DrkGPT into S-A .EXE
-        uses: Nuitka/Nuitka-Action@v0.4
+      - name: Build DrkGPT into S-A EXE
+      - uses: Nuitka/Nuitka-Action@main
         with:
           script-name: python/drkgpt.py
-
+          onefile: true
+          enable-plugins: pyside6
+          disable-console: true
+          
       # Uploads artifact
-      - name: Upload Artifact
+      - name: Upload Artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: exe
-          path: build/drkgpt.exe
+          name: ${{ runner.os }} Build
+          path: |
+            build/*.exe
+            build/*.bin
+            build/*.app/**/*
+            
