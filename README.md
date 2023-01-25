@@ -68,6 +68,14 @@ const openai = new OpenAIApi(configuration);
     console.log(completion.data.choices[0].text)
     })()
 ```
+
+## For Developers
+#### Browser Extension
+We Plan to make this into a browser extension.
+
+#### Builds
+I'm currently working on making a workflow that will make drkgpt.py into an exe after each commit.
+
 ## Credits
 All credits given to the OpenAI team for the API usage. 
 The Main developers of this project are **DrkTheDon** (drk#4697) and **DragonSlayer64** (ludvig#2236).
