@@ -9,7 +9,7 @@ pip3 install -r requirements.txt
 python3 main.py
 ```
 ### API USAGE
-To use **DrkGPT** you need an **API access key**. To get your personal secret key you need to own an account and enter: https://beta.openai.com/account/api-keys
+In order to use **DrkGPT** you need an **API access key**. Enter here amd create a secret key: https://beta.openai.com/account/api-keys
 
 ## Showcase
 #### QUESTION
