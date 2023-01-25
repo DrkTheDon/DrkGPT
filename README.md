@@ -18,7 +18,7 @@ https://beta.openai.com/account/api-keys
 #### OUTPUT IN GOOGLE DOCUMENTS
 ![](https://github.com/DrkTheDon/DrkGPT/blob/main/github/ezgif-2-b9f85f2fc1.gif)
 
-*Whoops accidentaly put the dot at the beggining. And this was written on the "HIGH SPEED" option.*
+*Written on the "HIGH SPEED" option. Ignore the dot that was my mistake lol.*
 
 ## For Developers
 
