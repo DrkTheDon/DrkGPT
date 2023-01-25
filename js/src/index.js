@@ -7,10 +7,14 @@ const configuration = new Configuration({
 });
 
 const openai = new OpenAIApi(configuration);
-(async() => {
-    const completion = await openai.createCompletion({
-    model: "text-davinci-003",
-    prompt: "Hello world",
+async () => {
+  try {
+    const response = await openai.Completion.create({
+      engine: "text-davinci-003",
+      prompt: prompt,
     });
-    console.log(completion.data.choices[0].text)
-    })()
+    console.log(response.choices[0].text);
+  } catch (error) {
+    console.log(error);
+  }
+};
