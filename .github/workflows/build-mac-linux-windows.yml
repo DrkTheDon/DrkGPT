@@ -32,15 +32,15 @@ jobs:
           architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
           cache: 'pip'
           cache-dependency-path: |
-            **/requirements*.txt
+            **/python/requirements*.txt
       # Install dependencies
       - name: Install Dependencies
         run: |
-          pip install -r requirements.txt
+          pip install -r python/requirements.txt
       # Build python script into a stand-alone exe
       - uses: jimkring/python-script-to-exe@v0.2.0
         with:
-          script-name: test.py
+          script-name: python/main.py
           onefile: true
           access-token: ${{ secrets.NUITKA_COMMERCIAL_ACCESS_TOKEN }}
           # macos-create-app-bundle: ${{ runner.os == 'macOS' }}
