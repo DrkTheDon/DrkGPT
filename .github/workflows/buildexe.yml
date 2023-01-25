@@ -22,7 +22,7 @@ jobs:
     
       # Check-out repository
       - name: Checkout DrkGPT
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
 
       # Setup Python
       - name: DrkGPT Setup Python
