@@ -1,9 +1,10 @@
 const express = require("express");
 const app = express();
 const { Configuration, OpenAIApi } = require("openai");
+const prompt = require("prompt-sync")();
 
 const configuration = new Configuration({
-  apiKey: "your api key",
+  apiKey: "Your Api code",
 });
 
 const openai = new OpenAIApi(configuration);
@@ -17,5 +18,7 @@ const completionFunction = async () => {
   console.log(completion.data.choices[0].text);
 };
 
-completionFunction();
+const userQuestion = prompt("Enter a prompt: ");
+completionFunction(userQuestion);
 
+//Npm install prompt-sync, Express and openai before using code(CHECK JSON FILE)
