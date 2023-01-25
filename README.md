@@ -9,7 +9,7 @@ pip3 install -r requirements.txt
 python3 main.py
 ```
 ### API USAGE
-To use DrkGPT you need an API access key. To get your personal you need to own an account and enter: ![API KEYS](https://beta.openai.com/account/api-keys)
+To use DrkGPT you need an API access key. To get your personal you need to own an account and enter: !([API KEYS)(https://beta.openai.com/account/api-keys)
 
 ## Showcase
 #### QUESTION
