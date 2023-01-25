@@ -1,6 +1,6 @@
 # This is a workflow for testing various Nuitka command-line options
 
-name: Build-EXE-DRKGPT
+name: DRKGPT To S-A .EXE - by DrK
 
 # Controls when the workflow will run
 on:
@@ -26,7 +26,7 @@ jobs:
 
       # Setup Python
       - name: DrkGPT Setup Python
-      - uses: actions/setup-python@v4
+        uses: actions/setup-python@v4
         with:
           python-version: '3.11' # Version range or exact version of a Python version to use, using SemVer's version range syntax
           architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
@@ -37,7 +37,7 @@ jobs:
 
       # Build python script into a stand-alone exe
       - name: Build DrkGPT into S-A .EXE
-      - uses: Nuitka/Nuitka-Action@v0.4
+        uses: Nuitka/Nuitka-Action@v0.4
         with:
           script-name: python/main.py
 
