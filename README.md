@@ -15,6 +15,9 @@ python3 main.py
 git clone https://github.com/DrkTheDon/DrkGPT.git
 cd /DrkGPT/js
 npm install openai
+npm install prompt-sync
+npm install express
+npm update
 cd src/
 node index.js
 ```
