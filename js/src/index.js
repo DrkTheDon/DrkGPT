@@ -6,7 +6,7 @@
 /////////////////////////////////////////////////////
 
 
-#Main 
+//main
 const express = require("express");
 const app = express();
 const { Configuration, OpenAIApi } = require("openai");
@@ -17,7 +17,7 @@ const configuration = new Configuration({
 });
 
 
-#Api#Post
+//api,post
 const openai = new OpenAIApi(configuration);
 
 const completionFunction = async () => {
@@ -30,7 +30,7 @@ const completionFunction = async () => {
 };
 
 
-#Prompt/#Request
+//prompt,request
 const userQuestion = prompt("Enter a prompt: ");
 completionFunction(userQuestion);
 console.log("Generating Answer, this might take some time.")
