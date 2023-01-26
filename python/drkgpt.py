@@ -98,7 +98,7 @@ elif fast == "3":
             time.sleep(timesleep)
 
 else:
-    print("Wrong option, Either choose 1 or 2. quitting")
+    print("Wrong option, Either choose 1 or 2. Quitting.")
     quit()
 
 
