@@ -5,6 +5,8 @@
 // Coded by: drk, DragonSlayer64                   //
 /////////////////////////////////////////////////////
 
+
+#Main 
 const express = require("express");
 const app = express();
 const { Configuration, OpenAIApi } = require("openai");
@@ -14,6 +16,8 @@ const configuration = new Configuration({
   apiKey: "Your Api code",
 });
 
+
+#Api#Post
 const openai = new OpenAIApi(configuration);
 
 const completionFunction = async () => {
@@ -25,7 +29,11 @@ const completionFunction = async () => {
   console.log(completion.data.choices[0].text);
 };
 
+
+#Prompt/#Request
 const userQuestion = prompt("Enter a prompt: ");
 completionFunction(userQuestion);
+console.log("Generating Answer, this might take some time.")
+
 
 //Npm install prompt-sync, Express and openai before using code(CHECK JSON FILE)
