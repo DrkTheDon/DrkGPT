@@ -22,9 +22,8 @@ cd src/
 node index.js
 ```
 ### API USAGE
-In order to use **DrkGPT** you need an **API access key**. Enter here amd create a secret key: 
+In order to use **DrkGPT** you need an **API access key**. Enter `API KEYS`: https://beta.openai.com/account/api-keys and create a secret key: 
 
-https://beta.openai.com/account/api-keys
 
 ## Preview
 #### QUESTION TO DRKGPT
