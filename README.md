@@ -76,6 +76,8 @@ const openai = new OpenAIApi(configuration);
 #### Browser Extension
 We Plan to make this into a browser extension. Head onto [DrkGPT-EXT](https://github.com/DrkTheDon/DrkGPT-EXT) and check it out!
 
+#### Windows Application
+We Plan to make this into a windows application written in C#. Head onto [DrkGPT-CS](https://github.com/DrkTheDon/DrkGPT-CS) and check it out!
 #### Builds
 I'm currently working on making a workflow that will make drkgpt.py into an exe after each commit.
 
